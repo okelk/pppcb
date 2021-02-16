@@ -1,0 +1,1762 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tm1640:TM1640 U1
+U 1 1 602837EC
+P 4250 1350
+F 0 "U1" H 3950 1600 50  0000 C CNN
+F 1 "TM1640" H 4450 1600 50  0000 C CNN
+F 2 "Display_7Segment:TM1640" H 4250 1600 50  0001 C CNN
+F 3 "https://datasheetspdf.com/pdf-file/838954/TitanMicro/TM1640/1" H 4250 1600 50  0001 C CNN
+	1    4250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 60286696
+P 1900 5350
+F 0 "Q1" V 2149 5350 50  0000 C CNN
+F 1 "BSS138" V 2240 5350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1900 5350 50  0001 L CNN
+	1    1900 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60289E7D
+P 1550 5200
+F 0 "R1" H 1620 5246 50  0000 L CNN
+F 1 "10K" H 1620 5155 50  0000 L CNN
+F 2 "" V 1480 5200 50  0001 C CNN
+F 3 "~" H 1550 5200 50  0001 C CNN
+	1    1550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6028A637
+P 2250 5200
+F 0 "R2" H 2320 5246 50  0000 L CNN
+F 1 "10K" H 2320 5155 50  0000 L CNN
+F 2 "" V 2180 5200 50  0001 C CNN
+F 3 "~" H 2250 5200 50  0001 C CNN
+	1    2250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 6028AC0A
+P 1550 4900
+F 0 "#PWR04" H 1550 4750 50  0001 C CNN
+F 1 "+3V3" H 1565 5073 50  0000 C CNN
+F 2 "" H 1550 4900 50  0001 C CNN
+F 3 "" H 1550 4900 50  0001 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 6028B5B1
+P 2250 4900
+F 0 "#PWR05" H 2250 4750 50  0001 C CNN
+F 1 "+5V" H 2265 5073 50  0000 C CNN
+F 2 "" H 2250 4900 50  0001 C CNN
+F 3 "" H 2250 4900 50  0001 C CNN
+	1    2250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5050 2250 4900
+Wire Wire Line
+	1550 4900 1550 4950
+Wire Wire Line
+	1900 5150 1900 4950
+Wire Wire Line
+	1900 4950 1550 4950
+Connection ~ 1550 4950
+Wire Wire Line
+	1550 4950 1550 5050
+Wire Wire Line
+	1550 5350 1550 5450
+Wire Wire Line
+	1550 5450 1700 5450
+Wire Wire Line
+	2100 5450 2250 5450
+Wire Wire Line
+	2250 5450 2250 5350
+Text GLabel 2400 5450 2    50   Input ~ 0
+DIN
+Wire Wire Line
+	2400 5450 2250 5450
+Connection ~ 2250 5450
+Wire Wire Line
+	1400 5450 1550 5450
+Connection ~ 1550 5450
+Text HLabel 1400 5450 0    50   Input ~ 0
+GPIO13
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 602986D1
+P 1900 6550
+F 0 "Q2" V 2149 6550 50  0000 C CNN
+F 1 "BSS138" V 2240 6550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 6475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1900 6550 50  0001 L CNN
+	1    1900 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 602986D7
+P 1550 6400
+F 0 "R3" H 1620 6446 50  0000 L CNN
+F 1 "10K" H 1620 6355 50  0000 L CNN
+F 2 "" V 1480 6400 50  0001 C CNN
+F 3 "~" H 1550 6400 50  0001 C CNN
+	1    1550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 602986DD
+P 2250 6400
+F 0 "R4" H 2320 6446 50  0000 L CNN
+F 1 "10K" H 2320 6355 50  0000 L CNN
+F 2 "" V 2180 6400 50  0001 C CNN
+F 3 "~" H 2250 6400 50  0001 C CNN
+	1    2250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 602986E3
+P 1550 6100
+F 0 "#PWR06" H 1550 5950 50  0001 C CNN
+F 1 "+3V3" H 1565 6273 50  0000 C CNN
+F 2 "" H 1550 6100 50  0001 C CNN
+F 3 "" H 1550 6100 50  0001 C CNN
+	1    1550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 602986E9
+P 2250 6100
+F 0 "#PWR07" H 2250 5950 50  0001 C CNN
+F 1 "+5V" H 2265 6273 50  0000 C CNN
+F 2 "" H 2250 6100 50  0001 C CNN
+F 3 "" H 2250 6100 50  0001 C CNN
+	1    2250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6250 2250 6100
+Wire Wire Line
+	1550 6100 1550 6150
+Wire Wire Line
+	1900 6350 1900 6150
+Wire Wire Line
+	1900 6150 1550 6150
+Connection ~ 1550 6150
+Wire Wire Line
+	1550 6150 1550 6250
+Wire Wire Line
+	1550 6550 1550 6650
+Wire Wire Line
+	1550 6650 1700 6650
+Wire Wire Line
+	2100 6650 2250 6650
+Wire Wire Line
+	2250 6650 2250 6550
+Text GLabel 2400 6650 2    50   Input ~ 0
+SCLK
+Wire Wire Line
+	2400 6650 2250 6650
+Connection ~ 2250 6650
+Wire Wire Line
+	1400 6650 1550 6650
+Connection ~ 1550 6650
+Text HLabel 1400 6650 0    50   Input ~ 0
+GPIO14
+Text Notes 1450 7200 0    100  ~ 20
+Level Shifters
+$Comp
+L power:GND #PWR03
+U 1 1 602A1263
+P 4250 3750
+F 0 "#PWR03" H 4250 3500 50  0001 C CNN
+F 1 "GND" H 4255 3577 50  0000 C CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3750 4250 3700
+$Comp
+L power:+5V #PWR01
+U 1 1 602A1D65
+P 4250 1000
+F 0 "#PWR01" H 4250 850 50  0001 C CNN
+F 1 "+5V" H 4250 1150 50  0000 C CNN
+F 2 "" H 4250 1000 50  0001 C CNN
+F 3 "" H 4250 1000 50  0001 C CNN
+	1    4250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1000 4250 1050
+$Comp
+L Device:C C1
+U 1 1 602A34B3
+P 3700 1250
+F 0 "C1" H 3815 1296 50  0000 L CNN
+F 1 "C" H 3815 1205 50  0000 L CNN
+F 2 "" H 3738 1100 50  0001 C CNN
+F 3 "~" H 3700 1250 50  0001 C CNN
+	1    3700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 602ABDE2
+P 3700 1450
+F 0 "#PWR02" H 3700 1200 50  0001 C CNN
+F 1 "GND" H 3705 1277 50  0000 C CNN
+F 2 "" H 3700 1450 50  0001 C CNN
+F 3 "" H 3700 1450 50  0001 C CNN
+	1    3700 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1450 3700 1400
+Wire Wire Line
+	3700 1100 3700 1000
+Wire Wire Line
+	3700 1000 4250 1000
+Connection ~ 4250 1000
+Text GLabel 3700 1900 0    50   Input ~ 0
+DIN
+Text GLabel 3700 2050 0    50   Input ~ 0
+SCLK
+Wire Wire Line
+	3700 2050 3800 2050
+Wire Wire Line
+	3700 1900 3800 1900
+Wire Wire Line
+	4700 1200 4850 1200
+Wire Wire Line
+	4700 1300 4850 1300
+Wire Wire Line
+	4700 1400 4850 1400
+Wire Wire Line
+	4700 1500 4850 1500
+Wire Wire Line
+	4700 1600 4850 1600
+Wire Wire Line
+	4700 1700 4850 1700
+Wire Wire Line
+	4700 1800 4850 1800
+Wire Wire Line
+	4700 1900 4850 1900
+Wire Wire Line
+	4700 2050 4850 2050
+Wire Wire Line
+	4700 2150 4850 2150
+Wire Wire Line
+	4700 2250 4850 2250
+Wire Wire Line
+	4700 2350 4850 2350
+Wire Wire Line
+	4700 2450 4850 2450
+Wire Wire Line
+	4700 2550 4850 2550
+Wire Wire Line
+	4700 2650 4850 2650
+Wire Wire Line
+	4700 2750 4850 2750
+Text Label 4750 1200 0    50   ~ 0
+S1
+Text Label 4750 1300 0    50   ~ 0
+S2
+Text Label 4750 1400 0    50   ~ 0
+S3
+Text Label 4750 1500 0    50   ~ 0
+S4
+Text Label 4750 1600 0    50   ~ 0
+S5
+Text Label 4750 1700 0    50   ~ 0
+S6
+Text Label 4750 1800 0    50   ~ 0
+S7
+Text Label 4750 1900 0    50   ~ 0
+S8
+Text Label 4750 2050 0    50   ~ 0
+G1
+Text Label 4750 2150 0    50   ~ 0
+G2
+Text Label 4750 2250 0    50   ~ 0
+G3
+Text Label 4750 2350 0    50   ~ 0
+G4
+Text Label 4750 2450 0    50   ~ 0
+G5
+Text Label 4750 2550 0    50   ~ 0
+G6
+Text Label 4750 2650 0    50   ~ 0
+G7
+Text Label 4750 2750 0    50   ~ 0
+G8
+$Comp
+L Device:LED_Small D1
+U 1 1 602D5450
+P 6400 2250
+F 0 "D1" V 6400 2348 50  0000 L CNN
+F 1 "LED_Small" V 6445 2348 50  0001 L CNN
+F 2 "" V 6400 2250 50  0001 C CNN
+F 3 "~" V 6400 2250 50  0001 C CNN
+	1    6400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 602DD8CC
+P 6900 2250
+F 0 "D2" V 6900 2348 50  0000 L CNN
+F 1 "LED_Small" V 6945 2348 50  0001 L CNN
+F 2 "" V 6900 2250 50  0001 C CNN
+F 3 "~" V 6900 2250 50  0001 C CNN
+	1    6900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 602DDD89
+P 7400 2250
+F 0 "D3" V 7400 2348 50  0000 L CNN
+F 1 "LED_Small" V 7445 2348 50  0001 L CNN
+F 2 "" V 7400 2250 50  0001 C CNN
+F 3 "~" V 7400 2250 50  0001 C CNN
+	1    7400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 602DE1C0
+P 7900 2250
+F 0 "D4" V 7900 2348 50  0000 L CNN
+F 1 "LED_Small" V 7945 2348 50  0001 L CNN
+F 2 "" V 7900 2250 50  0001 C CNN
+F 3 "~" V 7900 2250 50  0001 C CNN
+	1    7900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 602DF42E
+P 8400 2250
+F 0 "D5" V 8400 2348 50  0000 L CNN
+F 1 "LED_Small" V 8445 2348 50  0001 L CNN
+F 2 "" V 8400 2250 50  0001 C CNN
+F 3 "~" V 8400 2250 50  0001 C CNN
+	1    8400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D6
+U 1 1 602DF434
+P 8900 2250
+F 0 "D6" V 8900 2348 50  0000 L CNN
+F 1 "LED_Small" V 8945 2348 50  0001 L CNN
+F 2 "" V 8900 2250 50  0001 C CNN
+F 3 "~" V 8900 2250 50  0001 C CNN
+	1    8900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D7
+U 1 1 602DF43A
+P 9400 2250
+F 0 "D7" V 9400 2348 50  0000 L CNN
+F 1 "LED_Small" V 9445 2348 50  0001 L CNN
+F 2 "" V 9400 2250 50  0001 C CNN
+F 3 "~" V 9400 2250 50  0001 C CNN
+	1    9400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D8
+U 1 1 602DF440
+P 9900 2250
+F 0 "D8" V 9900 2348 50  0000 L CNN
+F 1 "LED_Small" V 9945 2348 50  0001 L CNN
+F 2 "" V 9900 2250 50  0001 C CNN
+F 3 "~" V 9900 2250 50  0001 C CNN
+	1    9900 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 2350 6400 2500
+Wire Wire Line
+	6400 2500 6900 2500
+Wire Wire Line
+	6900 2500 6900 2350
+Wire Wire Line
+	7400 2350 7400 2500
+Wire Wire Line
+	7400 2500 6900 2500
+Connection ~ 6900 2500
+Wire Wire Line
+	7900 2350 7900 2500
+Wire Wire Line
+	7900 2500 7400 2500
+Connection ~ 7400 2500
+Wire Wire Line
+	8400 2350 8400 2500
+Wire Wire Line
+	8400 2500 7900 2500
+Connection ~ 7900 2500
+Wire Wire Line
+	8900 2350 8900 2500
+Wire Wire Line
+	8900 2500 8400 2500
+Connection ~ 8400 2500
+Wire Wire Line
+	9400 2350 9400 2500
+Wire Wire Line
+	9400 2500 8900 2500
+Connection ~ 8900 2500
+Wire Wire Line
+	9900 2350 9900 2500
+Wire Wire Line
+	9900 2500 9400 2500
+Connection ~ 9400 2500
+$Comp
+L Device:LED_Small D9
+U 1 1 602E7D52
+P 6400 2750
+F 0 "D9" V 6400 2848 50  0000 L CNN
+F 1 "LED_Small" V 6445 2848 50  0001 L CNN
+F 2 "" V 6400 2750 50  0001 C CNN
+F 3 "~" V 6400 2750 50  0001 C CNN
+	1    6400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D10
+U 1 1 602E7D58
+P 6900 2750
+F 0 "D10" V 6900 2848 50  0000 L CNN
+F 1 "LED_Small" V 6945 2848 50  0001 L CNN
+F 2 "" V 6900 2750 50  0001 C CNN
+F 3 "~" V 6900 2750 50  0001 C CNN
+	1    6900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D11
+U 1 1 602E7D5E
+P 7400 2750
+F 0 "D11" V 7400 2848 50  0000 L CNN
+F 1 "LED_Small" V 7445 2848 50  0001 L CNN
+F 2 "" V 7400 2750 50  0001 C CNN
+F 3 "~" V 7400 2750 50  0001 C CNN
+	1    7400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D12
+U 1 1 602E7D64
+P 7900 2750
+F 0 "D12" V 7900 2848 50  0000 L CNN
+F 1 "LED_Small" V 7945 2848 50  0001 L CNN
+F 2 "" V 7900 2750 50  0001 C CNN
+F 3 "~" V 7900 2750 50  0001 C CNN
+	1    7900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D13
+U 1 1 602E7D6A
+P 8400 2750
+F 0 "D13" V 8400 2848 50  0000 L CNN
+F 1 "LED_Small" V 8445 2848 50  0001 L CNN
+F 2 "" V 8400 2750 50  0001 C CNN
+F 3 "~" V 8400 2750 50  0001 C CNN
+	1    8400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D14
+U 1 1 602E7D70
+P 8900 2750
+F 0 "D14" V 8900 2848 50  0000 L CNN
+F 1 "LED_Small" V 8945 2848 50  0001 L CNN
+F 2 "" V 8900 2750 50  0001 C CNN
+F 3 "~" V 8900 2750 50  0001 C CNN
+	1    8900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D15
+U 1 1 602E7D76
+P 9400 2750
+F 0 "D15" V 9400 2848 50  0000 L CNN
+F 1 "LED_Small" V 9445 2848 50  0001 L CNN
+F 2 "" V 9400 2750 50  0001 C CNN
+F 3 "~" V 9400 2750 50  0001 C CNN
+	1    9400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D16
+U 1 1 602E7D7C
+P 9900 2750
+F 0 "D16" V 9900 2848 50  0000 L CNN
+F 1 "LED_Small" V 9945 2848 50  0001 L CNN
+F 2 "" V 9900 2750 50  0001 C CNN
+F 3 "~" V 9900 2750 50  0001 C CNN
+	1    9900 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 2850 6400 3000
+Wire Wire Line
+	6400 3000 6900 3000
+Wire Wire Line
+	6900 3000 6900 2850
+Wire Wire Line
+	7400 2850 7400 3000
+Wire Wire Line
+	7400 3000 6900 3000
+Connection ~ 6900 3000
+Wire Wire Line
+	7900 2850 7900 3000
+Wire Wire Line
+	7900 3000 7400 3000
+Connection ~ 7400 3000
+Wire Wire Line
+	8400 2850 8400 3000
+Wire Wire Line
+	8400 3000 7900 3000
+Connection ~ 7900 3000
+Wire Wire Line
+	8900 2850 8900 3000
+Wire Wire Line
+	8900 3000 8400 3000
+Connection ~ 8400 3000
+Wire Wire Line
+	9400 2850 9400 3000
+Wire Wire Line
+	9400 3000 8900 3000
+Connection ~ 8900 3000
+Wire Wire Line
+	9900 2850 9900 3000
+Wire Wire Line
+	9900 3000 9400 3000
+Connection ~ 9400 3000
+$Comp
+L Device:LED_Small D17
+U 1 1 602F01F1
+P 6400 3250
+F 0 "D17" V 6400 3348 50  0000 L CNN
+F 1 "LED_Small" V 6445 3348 50  0001 L CNN
+F 2 "" V 6400 3250 50  0001 C CNN
+F 3 "~" V 6400 3250 50  0001 C CNN
+	1    6400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D18
+U 1 1 602F01F7
+P 6900 3250
+F 0 "D18" V 6900 3348 50  0000 L CNN
+F 1 "LED_Small" V 6945 3348 50  0001 L CNN
+F 2 "" V 6900 3250 50  0001 C CNN
+F 3 "~" V 6900 3250 50  0001 C CNN
+	1    6900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D19
+U 1 1 602F01FD
+P 7400 3250
+F 0 "D19" V 7400 3348 50  0000 L CNN
+F 1 "LED_Small" V 7445 3348 50  0001 L CNN
+F 2 "" V 7400 3250 50  0001 C CNN
+F 3 "~" V 7400 3250 50  0001 C CNN
+	1    7400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D20
+U 1 1 602F0203
+P 7900 3250
+F 0 "D20" V 7900 3348 50  0000 L CNN
+F 1 "LED_Small" V 7945 3348 50  0001 L CNN
+F 2 "" V 7900 3250 50  0001 C CNN
+F 3 "~" V 7900 3250 50  0001 C CNN
+	1    7900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D21
+U 1 1 602F0209
+P 8400 3250
+F 0 "D21" V 8400 3348 50  0000 L CNN
+F 1 "LED_Small" V 8445 3348 50  0001 L CNN
+F 2 "" V 8400 3250 50  0001 C CNN
+F 3 "~" V 8400 3250 50  0001 C CNN
+	1    8400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D22
+U 1 1 602F020F
+P 8900 3250
+F 0 "D22" V 8900 3348 50  0000 L CNN
+F 1 "LED_Small" V 8945 3348 50  0001 L CNN
+F 2 "" V 8900 3250 50  0001 C CNN
+F 3 "~" V 8900 3250 50  0001 C CNN
+	1    8900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D23
+U 1 1 602F0215
+P 9400 3250
+F 0 "D23" V 9400 3348 50  0000 L CNN
+F 1 "LED_Small" V 9445 3348 50  0001 L CNN
+F 2 "" V 9400 3250 50  0001 C CNN
+F 3 "~" V 9400 3250 50  0001 C CNN
+	1    9400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D24
+U 1 1 602F021B
+P 9900 3250
+F 0 "D24" V 9900 3348 50  0000 L CNN
+F 1 "LED_Small" V 9945 3348 50  0001 L CNN
+F 2 "" V 9900 3250 50  0001 C CNN
+F 3 "~" V 9900 3250 50  0001 C CNN
+	1    9900 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3350 6400 3500
+Wire Wire Line
+	6400 3500 6900 3500
+Wire Wire Line
+	6900 3500 6900 3350
+Wire Wire Line
+	7400 3350 7400 3500
+Wire Wire Line
+	7400 3500 6900 3500
+Connection ~ 6900 3500
+Wire Wire Line
+	7900 3350 7900 3500
+Wire Wire Line
+	7900 3500 7400 3500
+Connection ~ 7400 3500
+Wire Wire Line
+	8400 3350 8400 3500
+Wire Wire Line
+	8400 3500 7900 3500
+Connection ~ 7900 3500
+Wire Wire Line
+	8900 3350 8900 3500
+Wire Wire Line
+	8900 3500 8400 3500
+Connection ~ 8400 3500
+Wire Wire Line
+	9400 3350 9400 3500
+Wire Wire Line
+	9400 3500 8900 3500
+Connection ~ 8900 3500
+Wire Wire Line
+	9900 3350 9900 3500
+Wire Wire Line
+	9900 3500 9400 3500
+Connection ~ 9400 3500
+$Comp
+L Device:LED_Small D25
+U 1 1 602F0236
+P 6400 3750
+F 0 "D25" V 6400 3848 50  0000 L CNN
+F 1 "LED_Small" V 6445 3848 50  0001 L CNN
+F 2 "" V 6400 3750 50  0001 C CNN
+F 3 "~" V 6400 3750 50  0001 C CNN
+	1    6400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D26
+U 1 1 602F023C
+P 6900 3750
+F 0 "D26" V 6900 3848 50  0000 L CNN
+F 1 "LED_Small" V 6945 3848 50  0001 L CNN
+F 2 "" V 6900 3750 50  0001 C CNN
+F 3 "~" V 6900 3750 50  0001 C CNN
+	1    6900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D27
+U 1 1 602F0242
+P 7400 3750
+F 0 "D27" V 7400 3848 50  0000 L CNN
+F 1 "LED_Small" V 7445 3848 50  0001 L CNN
+F 2 "" V 7400 3750 50  0001 C CNN
+F 3 "~" V 7400 3750 50  0001 C CNN
+	1    7400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D28
+U 1 1 602F0248
+P 7900 3750
+F 0 "D28" V 7900 3848 50  0000 L CNN
+F 1 "LED_Small" V 7945 3848 50  0001 L CNN
+F 2 "" V 7900 3750 50  0001 C CNN
+F 3 "~" V 7900 3750 50  0001 C CNN
+	1    7900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D29
+U 1 1 602F024E
+P 8400 3750
+F 0 "D29" V 8400 3848 50  0000 L CNN
+F 1 "LED_Small" V 8445 3848 50  0001 L CNN
+F 2 "" V 8400 3750 50  0001 C CNN
+F 3 "~" V 8400 3750 50  0001 C CNN
+	1    8400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D30
+U 1 1 602F0254
+P 8900 3750
+F 0 "D30" V 8900 3848 50  0000 L CNN
+F 1 "LED_Small" V 8945 3848 50  0001 L CNN
+F 2 "" V 8900 3750 50  0001 C CNN
+F 3 "~" V 8900 3750 50  0001 C CNN
+	1    8900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D31
+U 1 1 602F025A
+P 9400 3750
+F 0 "D31" V 9400 3848 50  0000 L CNN
+F 1 "LED_Small" V 9445 3848 50  0001 L CNN
+F 2 "" V 9400 3750 50  0001 C CNN
+F 3 "~" V 9400 3750 50  0001 C CNN
+	1    9400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D32
+U 1 1 602F0260
+P 9900 3750
+F 0 "D32" V 9900 3848 50  0000 L CNN
+F 1 "LED_Small" V 9945 3848 50  0001 L CNN
+F 2 "" V 9900 3750 50  0001 C CNN
+F 3 "~" V 9900 3750 50  0001 C CNN
+	1    9900 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3850 6400 4000
+Wire Wire Line
+	6400 4000 6900 4000
+Wire Wire Line
+	6900 4000 6900 3850
+Wire Wire Line
+	7400 3850 7400 4000
+Wire Wire Line
+	7400 4000 6900 4000
+Connection ~ 6900 4000
+Wire Wire Line
+	7900 3850 7900 4000
+Wire Wire Line
+	7900 4000 7400 4000
+Connection ~ 7400 4000
+Wire Wire Line
+	8400 3850 8400 4000
+Wire Wire Line
+	8400 4000 7900 4000
+Connection ~ 7900 4000
+Wire Wire Line
+	8900 3850 8900 4000
+Wire Wire Line
+	8900 4000 8400 4000
+Connection ~ 8400 4000
+Wire Wire Line
+	9400 3850 9400 4000
+Wire Wire Line
+	9400 4000 8900 4000
+Connection ~ 8900 4000
+Wire Wire Line
+	9900 3850 9900 4000
+Wire Wire Line
+	9900 4000 9400 4000
+Connection ~ 9400 4000
+$Comp
+L Device:LED_Small D33
+U 1 1 603019E7
+P 6400 4250
+F 0 "D33" V 6400 4348 50  0000 L CNN
+F 1 "LED_Small" V 6445 4348 50  0001 L CNN
+F 2 "" V 6400 4250 50  0001 C CNN
+F 3 "~" V 6400 4250 50  0001 C CNN
+	1    6400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D34
+U 1 1 603019ED
+P 6900 4250
+F 0 "D34" V 6900 4348 50  0000 L CNN
+F 1 "LED_Small" V 6945 4348 50  0001 L CNN
+F 2 "" V 6900 4250 50  0001 C CNN
+F 3 "~" V 6900 4250 50  0001 C CNN
+	1    6900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D35
+U 1 1 603019F3
+P 7400 4250
+F 0 "D35" V 7400 4348 50  0000 L CNN
+F 1 "LED_Small" V 7445 4348 50  0001 L CNN
+F 2 "" V 7400 4250 50  0001 C CNN
+F 3 "~" V 7400 4250 50  0001 C CNN
+	1    7400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D36
+U 1 1 603019F9
+P 7900 4250
+F 0 "D36" V 7900 4348 50  0000 L CNN
+F 1 "LED_Small" V 7945 4348 50  0001 L CNN
+F 2 "" V 7900 4250 50  0001 C CNN
+F 3 "~" V 7900 4250 50  0001 C CNN
+	1    7900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D37
+U 1 1 603019FF
+P 8400 4250
+F 0 "D37" V 8400 4348 50  0000 L CNN
+F 1 "LED_Small" V 8445 4348 50  0001 L CNN
+F 2 "" V 8400 4250 50  0001 C CNN
+F 3 "~" V 8400 4250 50  0001 C CNN
+	1    8400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D38
+U 1 1 60301A05
+P 8900 4250
+F 0 "D38" V 8900 4348 50  0000 L CNN
+F 1 "LED_Small" V 8945 4348 50  0001 L CNN
+F 2 "" V 8900 4250 50  0001 C CNN
+F 3 "~" V 8900 4250 50  0001 C CNN
+	1    8900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D39
+U 1 1 60301A0B
+P 9400 4250
+F 0 "D39" V 9400 4348 50  0000 L CNN
+F 1 "LED_Small" V 9445 4348 50  0001 L CNN
+F 2 "" V 9400 4250 50  0001 C CNN
+F 3 "~" V 9400 4250 50  0001 C CNN
+	1    9400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D40
+U 1 1 60301A11
+P 9900 4250
+F 0 "D40" V 9900 4348 50  0000 L CNN
+F 1 "LED_Small" V 9945 4348 50  0001 L CNN
+F 2 "" V 9900 4250 50  0001 C CNN
+F 3 "~" V 9900 4250 50  0001 C CNN
+	1    9900 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4350 6400 4500
+Wire Wire Line
+	6400 4500 6900 4500
+Wire Wire Line
+	6900 4500 6900 4350
+Wire Wire Line
+	7400 4350 7400 4500
+Wire Wire Line
+	7400 4500 6900 4500
+Connection ~ 6900 4500
+Wire Wire Line
+	7900 4350 7900 4500
+Wire Wire Line
+	7900 4500 7400 4500
+Connection ~ 7400 4500
+Wire Wire Line
+	8400 4350 8400 4500
+Wire Wire Line
+	8400 4500 7900 4500
+Connection ~ 7900 4500
+Wire Wire Line
+	8900 4350 8900 4500
+Wire Wire Line
+	8900 4500 8400 4500
+Connection ~ 8400 4500
+Wire Wire Line
+	9400 4350 9400 4500
+Wire Wire Line
+	9400 4500 8900 4500
+Connection ~ 8900 4500
+Wire Wire Line
+	9900 4350 9900 4500
+Wire Wire Line
+	9900 4500 9400 4500
+Connection ~ 9400 4500
+$Comp
+L Device:LED_Small D41
+U 1 1 60301A2C
+P 6400 4750
+F 0 "D41" V 6400 4848 50  0000 L CNN
+F 1 "LED_Small" V 6445 4848 50  0001 L CNN
+F 2 "" V 6400 4750 50  0001 C CNN
+F 3 "~" V 6400 4750 50  0001 C CNN
+	1    6400 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D42
+U 1 1 60301A32
+P 6900 4750
+F 0 "D42" V 6900 4848 50  0000 L CNN
+F 1 "LED_Small" V 6945 4848 50  0001 L CNN
+F 2 "" V 6900 4750 50  0001 C CNN
+F 3 "~" V 6900 4750 50  0001 C CNN
+	1    6900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D43
+U 1 1 60301A38
+P 7400 4750
+F 0 "D43" V 7400 4848 50  0000 L CNN
+F 1 "LED_Small" V 7445 4848 50  0001 L CNN
+F 2 "" V 7400 4750 50  0001 C CNN
+F 3 "~" V 7400 4750 50  0001 C CNN
+	1    7400 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D44
+U 1 1 60301A3E
+P 7900 4750
+F 0 "D44" V 7900 4848 50  0000 L CNN
+F 1 "LED_Small" V 7945 4848 50  0001 L CNN
+F 2 "" V 7900 4750 50  0001 C CNN
+F 3 "~" V 7900 4750 50  0001 C CNN
+	1    7900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D45
+U 1 1 60301A44
+P 8400 4750
+F 0 "D45" V 8400 4848 50  0000 L CNN
+F 1 "LED_Small" V 8445 4848 50  0001 L CNN
+F 2 "" V 8400 4750 50  0001 C CNN
+F 3 "~" V 8400 4750 50  0001 C CNN
+	1    8400 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D46
+U 1 1 60301A4A
+P 8900 4750
+F 0 "D46" V 8900 4848 50  0000 L CNN
+F 1 "LED_Small" V 8945 4848 50  0001 L CNN
+F 2 "" V 8900 4750 50  0001 C CNN
+F 3 "~" V 8900 4750 50  0001 C CNN
+	1    8900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D47
+U 1 1 60301A50
+P 9400 4750
+F 0 "D47" V 9400 4848 50  0000 L CNN
+F 1 "LED_Small" V 9445 4848 50  0001 L CNN
+F 2 "" V 9400 4750 50  0001 C CNN
+F 3 "~" V 9400 4750 50  0001 C CNN
+	1    9400 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D48
+U 1 1 60301A56
+P 9900 4750
+F 0 "D48" V 9900 4848 50  0000 L CNN
+F 1 "LED_Small" V 9945 4848 50  0001 L CNN
+F 2 "" V 9900 4750 50  0001 C CNN
+F 3 "~" V 9900 4750 50  0001 C CNN
+	1    9900 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4850 6400 5000
+Wire Wire Line
+	6400 5000 6900 5000
+Wire Wire Line
+	6900 5000 6900 4850
+Wire Wire Line
+	7400 4850 7400 5000
+Wire Wire Line
+	7400 5000 6900 5000
+Connection ~ 6900 5000
+Wire Wire Line
+	7900 4850 7900 5000
+Wire Wire Line
+	7900 5000 7400 5000
+Connection ~ 7400 5000
+Wire Wire Line
+	8400 4850 8400 5000
+Wire Wire Line
+	8400 5000 7900 5000
+Connection ~ 7900 5000
+Wire Wire Line
+	8900 4850 8900 5000
+Wire Wire Line
+	8900 5000 8400 5000
+Connection ~ 8400 5000
+Wire Wire Line
+	9400 4850 9400 5000
+Wire Wire Line
+	9400 5000 8900 5000
+Connection ~ 8900 5000
+Wire Wire Line
+	9900 4850 9900 5000
+Wire Wire Line
+	9900 5000 9400 5000
+Connection ~ 9400 5000
+$Comp
+L Device:LED_Small D49
+U 1 1 60301A71
+P 6400 5250
+F 0 "D49" V 6400 5348 50  0000 L CNN
+F 1 "LED_Small" V 6445 5348 50  0001 L CNN
+F 2 "" V 6400 5250 50  0001 C CNN
+F 3 "~" V 6400 5250 50  0001 C CNN
+	1    6400 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D50
+U 1 1 60301A77
+P 6900 5250
+F 0 "D50" V 6900 5348 50  0000 L CNN
+F 1 "LED_Small" V 6945 5348 50  0001 L CNN
+F 2 "" V 6900 5250 50  0001 C CNN
+F 3 "~" V 6900 5250 50  0001 C CNN
+	1    6900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D51
+U 1 1 60301A7D
+P 7400 5250
+F 0 "D51" V 7400 5348 50  0000 L CNN
+F 1 "LED_Small" V 7445 5348 50  0001 L CNN
+F 2 "" V 7400 5250 50  0001 C CNN
+F 3 "~" V 7400 5250 50  0001 C CNN
+	1    7400 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D52
+U 1 1 60301A83
+P 7900 5250
+F 0 "D52" V 7900 5348 50  0000 L CNN
+F 1 "LED_Small" V 7945 5348 50  0001 L CNN
+F 2 "" V 7900 5250 50  0001 C CNN
+F 3 "~" V 7900 5250 50  0001 C CNN
+	1    7900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D53
+U 1 1 60301A89
+P 8400 5250
+F 0 "D53" V 8400 5348 50  0000 L CNN
+F 1 "LED_Small" V 8445 5348 50  0001 L CNN
+F 2 "" V 8400 5250 50  0001 C CNN
+F 3 "~" V 8400 5250 50  0001 C CNN
+	1    8400 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D54
+U 1 1 60301A8F
+P 8900 5250
+F 0 "D54" V 8900 5348 50  0000 L CNN
+F 1 "LED_Small" V 8945 5348 50  0001 L CNN
+F 2 "" V 8900 5250 50  0001 C CNN
+F 3 "~" V 8900 5250 50  0001 C CNN
+	1    8900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D55
+U 1 1 60301A95
+P 9400 5250
+F 0 "D55" V 9400 5348 50  0000 L CNN
+F 1 "LED_Small" V 9445 5348 50  0001 L CNN
+F 2 "" V 9400 5250 50  0001 C CNN
+F 3 "~" V 9400 5250 50  0001 C CNN
+	1    9400 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D56
+U 1 1 60301A9B
+P 9900 5250
+F 0 "D56" V 9900 5348 50  0000 L CNN
+F 1 "LED_Small" V 9945 5348 50  0001 L CNN
+F 2 "" V 9900 5250 50  0001 C CNN
+F 3 "~" V 9900 5250 50  0001 C CNN
+	1    9900 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 5350 6400 5500
+Wire Wire Line
+	6400 5500 6900 5500
+Wire Wire Line
+	6900 5500 6900 5350
+Wire Wire Line
+	7400 5350 7400 5500
+Wire Wire Line
+	7400 5500 6900 5500
+Connection ~ 6900 5500
+Wire Wire Line
+	7900 5350 7900 5500
+Wire Wire Line
+	7900 5500 7400 5500
+Connection ~ 7400 5500
+Wire Wire Line
+	8400 5350 8400 5500
+Wire Wire Line
+	8400 5500 7900 5500
+Connection ~ 7900 5500
+Wire Wire Line
+	8900 5350 8900 5500
+Wire Wire Line
+	8900 5500 8400 5500
+Connection ~ 8400 5500
+Wire Wire Line
+	9400 5350 9400 5500
+Wire Wire Line
+	9400 5500 8900 5500
+Connection ~ 8900 5500
+Wire Wire Line
+	9900 5350 9900 5500
+Wire Wire Line
+	9900 5500 9400 5500
+Connection ~ 9400 5500
+$Comp
+L Device:LED_Small D57
+U 1 1 60301AB6
+P 6400 5750
+F 0 "D57" V 6400 5848 50  0000 L CNN
+F 1 "LED_Small" V 6445 5848 50  0001 L CNN
+F 2 "" V 6400 5750 50  0001 C CNN
+F 3 "~" V 6400 5750 50  0001 C CNN
+	1    6400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D58
+U 1 1 60301ABC
+P 6900 5750
+F 0 "D58" V 6900 5848 50  0000 L CNN
+F 1 "LED_Small" V 6945 5848 50  0001 L CNN
+F 2 "" V 6900 5750 50  0001 C CNN
+F 3 "~" V 6900 5750 50  0001 C CNN
+	1    6900 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D59
+U 1 1 60301AC2
+P 7400 5750
+F 0 "D59" V 7400 5848 50  0000 L CNN
+F 1 "LED_Small" V 7445 5848 50  0001 L CNN
+F 2 "" V 7400 5750 50  0001 C CNN
+F 3 "~" V 7400 5750 50  0001 C CNN
+	1    7400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D60
+U 1 1 60301AC8
+P 7900 5750
+F 0 "D60" V 7900 5848 50  0000 L CNN
+F 1 "LED_Small" V 7945 5848 50  0001 L CNN
+F 2 "" V 7900 5750 50  0001 C CNN
+F 3 "~" V 7900 5750 50  0001 C CNN
+	1    7900 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D61
+U 1 1 60301ACE
+P 8400 5750
+F 0 "D61" V 8400 5848 50  0000 L CNN
+F 1 "LED_Small" V 8445 5848 50  0001 L CNN
+F 2 "" V 8400 5750 50  0001 C CNN
+F 3 "~" V 8400 5750 50  0001 C CNN
+	1    8400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D62
+U 1 1 60301AD4
+P 8900 5750
+F 0 "D62" V 8900 5848 50  0000 L CNN
+F 1 "LED_Small" V 8945 5848 50  0001 L CNN
+F 2 "" V 8900 5750 50  0001 C CNN
+F 3 "~" V 8900 5750 50  0001 C CNN
+	1    8900 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D63
+U 1 1 60301ADA
+P 9400 5750
+F 0 "D63" V 9400 5848 50  0000 L CNN
+F 1 "LED_Small" V 9445 5848 50  0001 L CNN
+F 2 "" V 9400 5750 50  0001 C CNN
+F 3 "~" V 9400 5750 50  0001 C CNN
+	1    9400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D64
+U 1 1 60301AE0
+P 9900 5750
+F 0 "D64" V 9900 5848 50  0000 L CNN
+F 1 "LED_Small" V 9945 5848 50  0001 L CNN
+F 2 "" V 9900 5750 50  0001 C CNN
+F 3 "~" V 9900 5750 50  0001 C CNN
+	1    9900 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 5850 6400 6000
+Wire Wire Line
+	6400 6000 6900 6000
+Wire Wire Line
+	6900 6000 6900 5850
+Wire Wire Line
+	7400 5850 7400 6000
+Wire Wire Line
+	7400 6000 6900 6000
+Connection ~ 6900 6000
+Wire Wire Line
+	7900 5850 7900 6000
+Wire Wire Line
+	7900 6000 7400 6000
+Connection ~ 7400 6000
+Wire Wire Line
+	8400 5850 8400 6000
+Wire Wire Line
+	8400 6000 7900 6000
+Connection ~ 7900 6000
+Wire Wire Line
+	8900 5850 8900 6000
+Wire Wire Line
+	8900 6000 8400 6000
+Connection ~ 8400 6000
+Wire Wire Line
+	9400 5850 9400 6000
+Wire Wire Line
+	9400 6000 8900 6000
+Connection ~ 8900 6000
+Wire Wire Line
+	9900 5850 9900 6000
+Wire Wire Line
+	9900 6000 9400 6000
+Connection ~ 9400 6000
+Wire Wire Line
+	6400 2150 6150 2150
+Wire Wire Line
+	6150 2150 6150 2650
+Wire Wire Line
+	6150 2650 6400 2650
+Wire Wire Line
+	6400 3150 6150 3150
+Wire Wire Line
+	6150 3150 6150 2650
+Connection ~ 6150 2650
+Wire Wire Line
+	6400 3650 6150 3650
+Wire Wire Line
+	6150 3650 6150 3150
+Connection ~ 6150 3150
+Wire Wire Line
+	6400 4150 6150 4150
+Wire Wire Line
+	6150 4150 6150 3650
+Connection ~ 6150 3650
+Wire Wire Line
+	6400 4650 6150 4650
+Wire Wire Line
+	6150 4650 6150 4150
+Connection ~ 6150 4150
+Wire Wire Line
+	6400 5150 6150 5150
+Connection ~ 6150 4650
+Wire Wire Line
+	6400 5650 6150 5650
+Wire Wire Line
+	6150 4650 6150 5150
+Connection ~ 6150 5150
+Wire Wire Line
+	6150 5150 6150 5650
+Wire Wire Line
+	6900 2150 6650 2150
+Wire Wire Line
+	6650 2150 6650 2650
+Wire Wire Line
+	6650 2650 6900 2650
+Wire Wire Line
+	6900 3150 6650 3150
+Wire Wire Line
+	6650 3150 6650 2650
+Connection ~ 6650 2650
+Wire Wire Line
+	6900 3650 6650 3650
+Wire Wire Line
+	6650 3650 6650 3150
+Connection ~ 6650 3150
+Wire Wire Line
+	6900 4150 6650 4150
+Wire Wire Line
+	6650 4150 6650 3650
+Connection ~ 6650 3650
+Wire Wire Line
+	6900 4650 6650 4650
+Wire Wire Line
+	6650 4650 6650 4150
+Connection ~ 6650 4150
+Wire Wire Line
+	6900 5150 6650 5150
+Connection ~ 6650 4650
+Wire Wire Line
+	6900 5650 6650 5650
+Wire Wire Line
+	6650 4650 6650 5150
+Connection ~ 6650 5150
+Wire Wire Line
+	6650 5150 6650 5650
+Wire Wire Line
+	7400 2150 7150 2150
+Wire Wire Line
+	7150 2650 7400 2650
+Wire Wire Line
+	7400 3150 7150 3150
+Wire Wire Line
+	7150 3150 7150 2650
+Connection ~ 7150 2650
+Wire Wire Line
+	7400 3650 7150 3650
+Wire Wire Line
+	7150 3650 7150 3150
+Connection ~ 7150 3150
+Wire Wire Line
+	7400 4150 7150 4150
+Wire Wire Line
+	7150 4150 7150 3650
+Connection ~ 7150 3650
+Wire Wire Line
+	7400 4650 7150 4650
+Wire Wire Line
+	7150 4650 7150 4150
+Connection ~ 7150 4150
+Wire Wire Line
+	7400 5150 7150 5150
+Connection ~ 7150 4650
+Wire Wire Line
+	7400 5650 7150 5650
+Wire Wire Line
+	7150 4650 7150 5150
+Connection ~ 7150 5150
+Wire Wire Line
+	7150 5150 7150 5650
+Wire Wire Line
+	7900 2150 7650 2150
+Wire Wire Line
+	7650 2650 7900 2650
+Wire Wire Line
+	7900 3150 7650 3150
+Wire Wire Line
+	7650 3150 7650 2650
+Connection ~ 7650 2650
+Wire Wire Line
+	7900 3650 7650 3650
+Wire Wire Line
+	7650 3650 7650 3150
+Connection ~ 7650 3150
+Wire Wire Line
+	7900 4150 7650 4150
+Wire Wire Line
+	7650 4150 7650 3650
+Connection ~ 7650 3650
+Wire Wire Line
+	7900 4650 7650 4650
+Wire Wire Line
+	7650 4650 7650 4150
+Connection ~ 7650 4150
+Wire Wire Line
+	7900 5150 7650 5150
+Connection ~ 7650 4650
+Wire Wire Line
+	7900 5650 7650 5650
+Wire Wire Line
+	7650 4650 7650 5150
+Connection ~ 7650 5150
+Wire Wire Line
+	7650 5150 7650 5650
+Wire Wire Line
+	8400 2150 8150 2150
+Wire Wire Line
+	8150 2150 8150 2650
+Wire Wire Line
+	8150 2650 8400 2650
+Wire Wire Line
+	8400 3150 8150 3150
+Wire Wire Line
+	8150 3150 8150 2650
+Connection ~ 8150 2650
+Wire Wire Line
+	8400 3650 8150 3650
+Wire Wire Line
+	8150 3650 8150 3150
+Connection ~ 8150 3150
+Wire Wire Line
+	8400 4150 8150 4150
+Wire Wire Line
+	8150 4150 8150 3650
+Connection ~ 8150 3650
+Wire Wire Line
+	8400 4650 8150 4650
+Wire Wire Line
+	8150 4650 8150 4150
+Connection ~ 8150 4150
+Wire Wire Line
+	8400 5150 8150 5150
+Connection ~ 8150 4650
+Wire Wire Line
+	8400 5650 8150 5650
+Wire Wire Line
+	8150 4650 8150 5150
+Connection ~ 8150 5150
+Wire Wire Line
+	8150 5150 8150 5650
+Wire Wire Line
+	8900 2150 8650 2150
+Wire Wire Line
+	8650 2150 8650 2650
+Wire Wire Line
+	8650 2650 8900 2650
+Wire Wire Line
+	8900 3150 8650 3150
+Wire Wire Line
+	8650 3150 8650 2650
+Connection ~ 8650 2650
+Wire Wire Line
+	8900 3650 8650 3650
+Wire Wire Line
+	8650 3650 8650 3150
+Connection ~ 8650 3150
+Wire Wire Line
+	8900 4150 8650 4150
+Wire Wire Line
+	8650 4150 8650 3650
+Connection ~ 8650 3650
+Wire Wire Line
+	8900 4650 8650 4650
+Wire Wire Line
+	8650 4650 8650 4150
+Connection ~ 8650 4150
+Wire Wire Line
+	8900 5150 8650 5150
+Connection ~ 8650 4650
+Wire Wire Line
+	8900 5650 8650 5650
+Wire Wire Line
+	8650 4650 8650 5150
+Connection ~ 8650 5150
+Wire Wire Line
+	8650 5150 8650 5650
+Wire Wire Line
+	9400 2150 9150 2150
+Wire Wire Line
+	9150 2150 9150 2650
+Wire Wire Line
+	9150 2650 9400 2650
+Wire Wire Line
+	9400 3150 9150 3150
+Wire Wire Line
+	9150 3150 9150 2650
+Connection ~ 9150 2650
+Wire Wire Line
+	9400 3650 9150 3650
+Wire Wire Line
+	9150 3650 9150 3150
+Connection ~ 9150 3150
+Wire Wire Line
+	9400 4150 9150 4150
+Wire Wire Line
+	9150 4150 9150 3650
+Connection ~ 9150 3650
+Wire Wire Line
+	9400 4650 9150 4650
+Wire Wire Line
+	9150 4650 9150 4150
+Connection ~ 9150 4150
+Wire Wire Line
+	9400 5150 9150 5150
+Connection ~ 9150 4650
+Wire Wire Line
+	9400 5650 9150 5650
+Wire Wire Line
+	9150 4650 9150 5150
+Connection ~ 9150 5150
+Wire Wire Line
+	9150 5150 9150 5650
+Wire Wire Line
+	9900 2150 9650 2150
+Wire Wire Line
+	9650 2150 9650 2650
+Wire Wire Line
+	9650 2650 9900 2650
+Wire Wire Line
+	9900 3150 9650 3150
+Wire Wire Line
+	9650 3150 9650 2650
+Connection ~ 9650 2650
+Wire Wire Line
+	9900 3650 9650 3650
+Wire Wire Line
+	9650 3650 9650 3150
+Connection ~ 9650 3150
+Wire Wire Line
+	9900 4150 9650 4150
+Wire Wire Line
+	9650 4150 9650 3650
+Connection ~ 9650 3650
+Wire Wire Line
+	9900 4650 9650 4650
+Wire Wire Line
+	9650 4650 9650 4150
+Connection ~ 9650 4150
+Wire Wire Line
+	9900 5150 9650 5150
+Connection ~ 9650 4650
+Wire Wire Line
+	9900 5650 9650 5650
+Wire Wire Line
+	9650 4650 9650 5150
+Connection ~ 9650 5150
+Wire Wire Line
+	9650 5150 9650 5650
+Text Label 9650 2150 1    50   ~ 0
+S8
+Text Label 9150 2150 1    50   ~ 0
+S7
+Text Label 8650 2150 1    50   ~ 0
+S6
+Text Label 8150 2150 1    50   ~ 0
+S5
+Text Label 7650 2150 1    50   ~ 0
+S4
+Text Label 7150 2150 1    50   ~ 0
+S3
+Text Label 6650 2150 1    50   ~ 0
+S2
+Text Label 6150 2150 1    50   ~ 0
+S1
+Wire Wire Line
+	6400 2500 5950 2500
+Connection ~ 6400 2500
+Entry Wire Line
+	5950 6000 5850 6100
+Wire Wire Line
+	6400 3000 5950 3000
+Entry Wire Line
+	5950 5500 5850 5600
+Wire Wire Line
+	6400 3500 5950 3500
+Entry Wire Line
+	5950 5000 5850 5100
+Wire Wire Line
+	6400 4000 5950 4000
+Entry Wire Line
+	5950 4500 5850 4600
+Wire Wire Line
+	6400 4500 5950 4500
+Entry Wire Line
+	5950 4000 5850 4100
+Wire Wire Line
+	6400 5000 5950 5000
+Entry Wire Line
+	5950 3500 5850 3600
+Wire Wire Line
+	6400 5500 5950 5500
+Entry Wire Line
+	5950 3000 5850 3100
+Wire Wire Line
+	6400 6000 5950 6000
+Entry Wire Line
+	5950 2500 5850 2600
+Text Label 6000 2500 0    50   ~ 0
+G1
+Text Label 5950 3000 0    50   ~ 0
+G2
+Text Label 5950 3500 0    50   ~ 0
+G3
+Text Label 5950 4000 0    50   ~ 0
+G4
+Text Label 5950 4500 0    50   ~ 0
+G5
+Text Label 5950 5000 0    50   ~ 0
+G6
+Text Label 5950 5500 0    50   ~ 0
+G7
+Entry Wire Line
+	4850 2150 4950 2250
+Entry Wire Line
+	4850 2750 4950 2850
+Entry Wire Line
+	4850 2650 4950 2750
+Entry Wire Line
+	4850 2550 4950 2650
+Entry Wire Line
+	4850 2450 4950 2550
+Entry Wire Line
+	4850 2350 4950 2450
+Entry Wire Line
+	4850 2250 4950 2350
+Text Label 5950 6000 0    50   ~ 0
+G8
+Wire Bus Line
+	4950 6100 5850 6100
+Text Label 5250 6100 0    50   ~ 0
+G[1...8]
+Entry Wire Line
+	4850 1300 4950 1200
+Entry Wire Line
+	4850 1400 4950 1300
+Entry Wire Line
+	4850 1500 4950 1400
+Entry Wire Line
+	4850 1600 4950 1500
+Entry Wire Line
+	4850 1700 4950 1600
+Entry Wire Line
+	4850 1800 4950 1700
+Entry Wire Line
+	4850 1900 4950 1800
+Entry Wire Line
+	4850 2050 4950 2150
+Entry Wire Line
+	4850 1200 4950 1100
+Entry Wire Line
+	6150 1900 6050 1800
+Wire Wire Line
+	6150 2150 6150 1900
+Connection ~ 6150 2150
+Entry Wire Line
+	6650 1900 6550 1800
+Wire Wire Line
+	6650 2150 6650 1900
+Wire Wire Line
+	7650 2150 7650 2650
+Wire Wire Line
+	7150 2150 7150 2650
+Entry Wire Line
+	7150 1900 7050 1800
+Wire Wire Line
+	7150 2150 7150 1900
+Entry Wire Line
+	7650 1900 7550 1800
+Wire Wire Line
+	7650 2150 7650 1900
+Entry Wire Line
+	8150 1900 8050 1800
+Wire Wire Line
+	8150 2150 8150 1900
+Entry Wire Line
+	8650 1900 8550 1800
+Wire Wire Line
+	8650 2150 8650 1900
+Entry Wire Line
+	9150 1900 9050 1800
+Wire Wire Line
+	9150 2150 9150 1900
+Entry Wire Line
+	9650 1900 9550 1800
+Wire Wire Line
+	9650 2150 9650 1900
+Text Label 5200 1800 0    50   ~ 0
+S[1...8]
+Connection ~ 6400 3000
+Connection ~ 6400 3500
+Connection ~ 6400 4000
+Connection ~ 6400 4500
+Connection ~ 6400 5000
+Connection ~ 6400 5500
+Connection ~ 6400 6000
+Connection ~ 6650 2150
+Connection ~ 7150 2150
+Connection ~ 7650 2150
+Connection ~ 8150 2150
+Connection ~ 8650 2150
+Connection ~ 9150 2150
+Connection ~ 9650 2150
+Wire Bus Line
+	5850 2600 5850 6100
+Wire Bus Line
+	4950 1100 4950 1800
+Wire Bus Line
+	4950 2150 4950 6100
+Wire Bus Line
+	4950 1800 9550 1800
+$EndSCHEMATC
